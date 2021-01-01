@@ -1,0 +1,65 @@
+body{
+    background-color: gold;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.block__left {
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 32px;
+}
+#number-write {
+    display: block;
+    width: 220px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid rgb(47, 0, 255);
+    outline:none;
+    text-align: center;
+    font-size: 18px;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.btn{
+    cursor: pointer;
+    outline:none;
+    top: 10px;
+    width: 120px;
+    background-color: honeydew;
+    border: 1px solid rgb(65, 50, 204);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.block__right {
+    padding-left: 70px;
+    padding-right: 30px;
+    height: 400px;
+    overflow-y: scroll;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: gold; }
+::-webkit-scrollbar-track {  background-color: rgb(189, 0, 0);}
+::-webkit-scrollbar-track-piece { background-color: gold;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}
